@@ -1,5 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    font-family: 'Century Gothic', Calibri, serif
+    font-family: 'Century Gothic', Calibri, serif;
     font-size: 13px;
     margin: 0px;
     padding: 0px;
@@ -12,20 +15,28 @@ h1{
     color: #DAA520;
 }
 
+h2{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #DAA520;
+}
+
 header{
-    height: 300px;
+    height: 700px;
+    background-image: url(Adg_logo.png);
     background-image:url(Geneve.jpg);
-    background-size: covercd;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     
 }
 
 footer{
-    height: 80px;
+    height: 200px;
     padding-top: 30px;
     text-align: center;
-    background-color: #C5C5C5;
-    border-top: 2px solid #AAA;
+    background-color: #00003b;
+    border-top: 30px solid #1e0b2e;
 }
 
 nav{
@@ -90,12 +101,17 @@ section{
 
 .left{
     float: left;
-    width: 30%;
+    width: 28%;
 }
-.right{
-    float: left;
+.middle{
+    float: right;
     width: 70%;
 }
+.right{
+    float: right;
+    width: 28%;
+}
+
 .cleft, .cright, .sousleft, .sousright{
     width: 50%;
     float: left;
@@ -168,4 +184,16 @@ section{
     nav li:hover a{
         padding: 5px 10px 10px 10px;
     }
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 30px;
+    text-decoration: none;
+    text-align: start;
+    line-height: 50px;
+    color: grey;
+    font-size: 40px;
 }
