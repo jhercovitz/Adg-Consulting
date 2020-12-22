@@ -21,27 +21,44 @@ h2{
     text-align: center;
     color: #DAA520;
 }
+h3{
+    color: #DAA520;
+}
+
+#p1{
+    color: #DAA520;
+}
+
+#p2{
+    color: #DAA520;    
+}
+
 
 header{
-    height: 700px;
-    background-image: url(Adg_logo.png);
+    padding-top: 0px;
+    height: 690px;
     background-image:url(Geneve.jpg);
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
+}
+
+.logo{
+    position: relative;
+    top: 100px;
+    left: 150px;
 }
 
 footer{
     height: 200px;
     padding-top: 30px;
     text-align: center;
-    background-color: #00003b;
-    border-top: 30px solid #1e0b2e;
+    background-color: #00006d;
+    border-top: 2px solid black;
 }
 
 nav{
     width: 100%;
-    background-color: #00003b;
+    background-color: #00006d;
 }
 
 nav ul{
@@ -68,16 +85,11 @@ nav a{
     margin: 0 auto;
 }
 .menu-ind:hover, .presentation{
-    border-top: 5px solid #4C8;
-    background-color: rgba(64, 200, 130, 0.15);
+    border-top: 2px solid black;
 }
 .menu-exp:hover, .parcours{
     border-top: 5px solid #f1dc4f;
     background-color: rgba(241, 211, 79, 0.15);
-}
-.menu-hob:hover, .competences{
-    border-top: 5px solid #0070BB;
-    background-color: rgba(000, 112, 192, 0.15);
 }
 .menu-con:hover, .recommandations{
     border-top: 5px solid #e44d26;
@@ -90,9 +102,6 @@ nav li:hover a{
 
 section{
     width: 100%;
-    min-height: 300px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 }
 
 .sec{
@@ -112,9 +121,12 @@ section{
     width: 28%;
 }
 
-.cleft, .cright, .sousleft, .sousright{
-    width: 50%;
-    float: left;
+.ileft{
+    display: inline-block;
+}
+
+.iright{
+    display: inline-block;
 }
 
 .sec::after, .exp::after, .reco::after{
@@ -194,6 +206,6 @@ section{
     text-decoration: none;
     text-align: start;
     line-height: 50px;
-    color: grey;
+    color: #DAA520;
     font-size: 40px;
 }
