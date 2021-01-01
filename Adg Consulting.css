@@ -22,6 +22,7 @@ h2{
     color: #DAA520;
 }
 h3{
+    font-size: 20px;
     color: #DAA520;
 }
 
@@ -53,7 +54,7 @@ footer{
     padding-top: 30px;
     text-align: center;
     background-color: #00006d;
-    border-top: 2px solid black;
+    border-top: 60px solid #030338;
 }
 
 nav{
@@ -112,22 +113,26 @@ section{
     float: left;
     width: 28%;
 }
-.middle{
+.mid{
     float: right;
     width: 70%;
 }
+
 .right{
     float: right;
     width: 28%;
 }
 
 .ileft{
-    display: inline-block;
+    margin-left: 0px;
+    -webkit-transition: .3s ease-in-out;
+    float: left;
 }
 
 .iright{
     display: inline-block;
 }
+
 
 .sec::after, .exp::after, .reco::after{
     content: "";
@@ -150,10 +155,7 @@ section{
     background-color: rgba(228, 77, 128, 0.15);
     margin-bottom: 0px;
 }
-.vert{
-    border-top: 5px solid #5f6;
-    background-color: rgba(70, 240, 80, 0.15);
-}
+
 .bleu{
     border-top: 5px solid #29c;
     background-color: rgba(30, 152, 212, 0.15);
