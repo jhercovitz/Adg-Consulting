@@ -26,6 +26,11 @@ h3{
     color: #DAA520;
 }
 
+h4{
+    font-size: 30px;
+    color: #DAA520;
+}
+
 #p1{
     color: #DAA520;
 }
@@ -85,17 +90,10 @@ nav a{
     display: table;
     margin: 0 auto;
 }
-.menu-ind:hover, .presentation{
-    border-top: 2px solid black;
+.menu-ind:hover, .menu-qui:hover, .menu-ser:hover, .menu-dia:hover, .menu-con:hover{
+    border-top: 2px solid #DAA520;
 }
-.menu-exp:hover, .parcours{
-    border-top: 5px solid #f1dc4f;
-    background-color: rgba(241, 211, 79, 0.15);
-}
-.menu-con:hover, .recommandations{
-    border-top: 5px solid #e44d26;
-    background-color: rgba(228, 77, 38, 0.15);
-}
+
 
 nav li:hover a{
     padding: 15px 30px 20px 30px;
@@ -103,6 +101,7 @@ nav li:hover a{
 
 section{
     width: 100%;
+    border-top: 5px solid #DAA520;
 }
 
 .sec{
@@ -120,24 +119,28 @@ section{
 
 .right{
     float: right;
-    width: 28%;
+    width: 29%;
 }
 
 .ileft{
     margin-left: 0px;
-    -webkit-transition: .3s ease-in-out;
     float: left;
 }
 
 .iright{
+    margin-right: 0px;
     display: inline-block;
 }
 
+.right2{
+    float: right;
+    width: 50%;
 
-.sec::after, .exp::after, .reco::after{
-    content: "";
-    display: table;
-    clear: both;
+}
+
+.left2{
+    float: left;
+    width: 50%;
 }
 
 .resize{
@@ -145,29 +148,6 @@ section{
     height: 100px;
 }
 
-.orange{
-    border-top: 5px solid #e47d26;
-    background-color: rgba(228, 117, 38, 0.15);
-    margin-bottom: 0px;
-}
-.rose{
-    border-top: 5px solid #e44d96;
-    background-color: rgba(228, 77, 128, 0.15);
-    margin-bottom: 0px;
-}
-
-.bleu{
-    border-top: 5px solid #29c;
-    background-color: rgba(30, 152, 212, 0.15);
-}
-.jaune{
-    border-top: 5px solid #f3e241;
-    background-color: rgba(240, 255, 69, 0.15);
-}
-.rouge{
-    border-top: 5px solid #e44d26;
-    background-color: rgba(228, 77, 38, 0.15);
-}
 .leftexp{
     width: 45%;
     float: left;
@@ -178,9 +158,9 @@ section{
     margin: 5%;
 }
 
-.leftexp img{
-    width: 100%;
-    max-width: 400px;
+.card:hover{
+    width: 200px;
+    border-top: 2px solid #DAA520;
 }
 
 @media screen and (max-width: 780px){
@@ -210,4 +190,46 @@ section{
     line-height: 50px;
     color: #DAA520;
     font-size: 40px;
+}
+
+.social-menu ul {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 160px;
+    right: 47px;
+}
+.social-menu ul li{
+    list-style: none;
+}
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 30px;
+    transition: .9s;
+    color: #DAA520;
+}
+.social-menu ul li .fab:hover{
+    color: #DAA520;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .9s;
+
+}
+.social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #FFFC00;
 }
