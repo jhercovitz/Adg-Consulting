@@ -10,7 +10,7 @@ body{
 
 h1{
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     color: #DAA520;
 }
@@ -22,7 +22,7 @@ h2{
     color: #DAA520;
 }
 h3{
-    font-size: 20px;
+    font-size: 25px;
     color: #DAA520;
 }
 
@@ -31,14 +31,24 @@ h4{
     color: #DAA520;
 }
 
+p{
+    font-size: 18px;
+    color: #00006d;
+}
+
 #p1{
+    font-size: 15px;
     color: #DAA520;
 }
 
 #p2{
+    font-size: 10px;
     color: #DAA520;    
 }
 
+a{
+    color: #DAA520;
+}
 
 header{
     padding-top: 0px;
@@ -55,7 +65,7 @@ header{
 }
 
 footer{
-    height: 200px;
+    height: 220px;
     padding-top: 30px;
     text-align: center;
     background-color: #00006d;
@@ -105,33 +115,37 @@ section{
 }
 
 .sec{
-    margin: 0px 10%;
+     margin: 0px 4%; 
 }
 
 .left{
-    float: left;
+    float: left; 
     width: 28%;
 }
-.mid{
-    float: right;
-    width: 70%;
+.center{
+     float: left; 
+    width: 40%;
 }
 
 .right{
-    float: right;
-    width: 29%;
+    float: right; 
+    width: 32%;
+}
+
+.images{
+    border-top: none;
+    display: flex;
+    padding-bottom: 3%;
 }
 
 .ileft{
-    margin-left: 0px;
-    float: left;
+    flex: 50%;
+    padding-right: 0.2%;
 }
 
 .iright{
-    margin-right: 0px;
-    display: inline-block;
+    flex: 50%;
 }
-
 .right2{
     float: right;
     width: 50%;
@@ -193,17 +207,15 @@ section{
 }
 
 .social-menu ul {
-    position: fixed;
     width: 30px;
     height: 30px;
-    bottom: 160px;
-    right: 47px;
+
 }
 .social-menu ul li{
     list-style: none;
 }
 .social-menu ul li .fab{
-    font-size: 30px;
+    font-size: 35px;
     line-height: 30px;
     transition: .9s;
     color: #DAA520;
@@ -213,11 +225,10 @@ section{
 }
 .social-menu ul li a{
     position: relative;
-    display: block;
+    display:flow-root;
     width: 30px;
-    height: 30px;
+    height: 35px;
     border-radius: 50%;
-    text-align: center;
     transition: .9s;
 
 }
@@ -232,4 +243,13 @@ section{
 }
 .social-menu ul li:nth-child(3) a:hover{
     background-color: #FFFC00;
+}
+
+.devis{
+    float: right;
+    background-color:  #DAA520;
+}
+
+.a1{
+    color: #00006d;
 }
