@@ -50,10 +50,15 @@ a{
     color: #DAA520;
 }
 
+.a1{
+    color: #00006d;
+    text-decoration: none;
+}
+
 header{
     padding-top: 0px;
     height: 690px;
-    background-image:url(Geneve.jpg);
+    background-image:url(Photos/Geneve.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;    
 }
@@ -120,16 +125,16 @@ section{
 
 .left{
     float: left; 
-    width: 28%;
+    width: 33%;
 }
 .center{
      float: left; 
-    width: 40%;
+    width: 32%;
 }
 
 .right{
     float: right; 
-    width: 32%;
+    width: 33%;
 }
 
 .images{
@@ -173,8 +178,7 @@ section{
 }
 
 .card:hover{
-    width: 200px;
-    border-top: 2px solid #DAA520;
+    float: right;
 }
 
 @media screen and (max-width: 780px){
@@ -250,6 +254,23 @@ section{
     background-color:  #DAA520;
 }
 
-.a1{
-    color: #00006d;
-}
+.ml2 {
+    font-weight: 900;
+    font-size: 2.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .ml16 {
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
