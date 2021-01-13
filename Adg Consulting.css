@@ -70,8 +70,8 @@ header{
 }
 
 footer{
-    height: 220px;
-    padding-top: 30px;
+    height: 250px;
+    padding-top: 0px;
     text-align: center;
     background-color: #00006d;
     border-top: 60px solid #030338;
@@ -126,15 +126,18 @@ section{
 .left{
     float: left; 
     width: 33%;
+    text-align: center;
 }
 .center{
      float: left; 
-    width: 32%;
+    width: 33%;
+    text-align: center;
 }
 
 .right{
     float: right; 
     width: 33%;
+    text-align: center;
 }
 
 .images{
@@ -213,14 +216,13 @@ section{
 .social-menu ul {
     width: 30px;
     height: 30px;
-
 }
 .social-menu ul li{
     list-style: none;
 }
 .social-menu ul li .fab{
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 40px;
     transition: .9s;
     color: #DAA520;
 }
@@ -228,16 +230,16 @@ section{
     color: #DAA520;
 }
 .social-menu ul li a{
+    margin-bottom: 4px;
     position: relative;
     display:flow-root;
-    width: 30px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transition: .9s;
-
 }
 .social-menu ul li a:hover{
-    transform: translate(0, -10px);
+    transform: translate(0, -5px);
 }
 .social-menu ul li:nth-child(1) a:hover{
     background-color: #3b5999;
@@ -255,7 +257,7 @@ section{
 }
 
 .ml2 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2.5em;
   }
   
@@ -265,7 +267,7 @@ section{
   }
 
   .ml16 {
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.2em;
     overflow: hidden;
   }
