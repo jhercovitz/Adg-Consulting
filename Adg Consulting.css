@@ -8,6 +8,10 @@ body{
     padding: 0px;
 }
 
+ul{
+    padding: inherit;
+    margin: inherit;
+}
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -64,17 +68,16 @@ header{
 }
 
 .logo{
-    position: relative;
+    position: absolute;
     top: 100px;
     left: 150px;
 }
 
 footer{
-    height: 250px;
+    height: auto;
     padding-top: 0px;
     text-align: center;
     background-color: #00006d;
-    border-top: 60px solid #030338;
 }
 
 nav{
@@ -213,23 +216,42 @@ section{
     font-size: 40px;
 }
 
-.social-menu ul {
-    width: 30px;
-    height: 30px;
+
+.social-menu{
+    display: flex;
+    padding-top: 20px;
 }
-.social-menu ul li{
+.link{
+    width: 100%;
+    background-color: #030338;
+    display: flex;
+    height: 60px;
+    margin: auto;
+}
+.horaires{
+    width: 100%;
+    margin: auto;
+}
+
+.link ul {
+    height: 30px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.link ul li{
     list-style: none;
 }
-.social-menu ul li .fab{
+.link ul li .fab{
     font-size: 32px;
     line-height: 40px;
-    transition: .9s;
+    transition-duration: .9s;
     color: #DAA520;
 }
-.social-menu ul li .fab:hover{
+.link ul li .fab:hover{
     color: #DAA520;
 }
-.social-menu ul li a{
+.link ul li a{
     margin-bottom: 4px;
     position: relative;
     display:flow-root;
@@ -238,16 +260,16 @@ section{
     border-radius: 50%;
     transition: .9s;
 }
-.social-menu ul li a:hover{
+.link ul li a:hover{
     transform: translate(0, -5px);
 }
-.social-menu ul li:nth-child(1) a:hover{
+.link ul li:nth-child(1) a:hover{
     background-color: #3b5999;
 }
-.social-menu ul li:nth-child(2) a:hover{
+.link ul li:nth-child(2) a:hover{
     background-color: #e4405f;
 }
-.social-menu ul li:nth-child(3) a:hover{
+.link ul li:nth-child(3) a:hover{
     background-color: #FFFC00;
 }
 
@@ -275,4 +297,37 @@ section{
   .ml16 .letter {
     display: inline-block;
     line-height: 1em;
+  }
+  .ml17 {
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+  }
+  
+  .ml17 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .ml18 {
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+  }
+
+  #video{
+    position: relative;
+    background: url(videos/Adg_dubai.jpg) no-repeat;
+    background-size: cover;
+    min-width: 100%; max-height: 690px;
+  }
+  
+  .ml18 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .card{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
