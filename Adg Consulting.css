@@ -74,7 +74,7 @@ header{
 }
 
 footer{
-    height: auto;
+    height: 280px;
     padding-top: 0px;
     text-align: center;
     background-color: #00006d;
@@ -159,13 +159,13 @@ section{
 }
 .right2{
     float: right;
-    width: 50%;
+    width: 49%;
 
 }
 
 .left2{
     float: left;
-    width: 50%;
+    width: 49%;
 }
 
 .resize{
@@ -227,6 +227,7 @@ section{
     display: flex;
     height: 60px;
     margin: auto;
+    border-top: 5px solid #DAA520;
 }
 .horaires{
     width: 100%;
@@ -313,21 +314,25 @@ section{
     letter-spacing: 0.2em;
     overflow: hidden;
   }
-
-  #video{
-    position: relative;
-    background: url(videos/Adg_dubai.jpg) no-repeat;
-    background-size: cover;
-    min-width: 100%; max-height: 690px;
-  }
-  
   .ml18 .letter {
     display: inline-block;
     line-height: 1em;
   }
-
+  
+  #video{
+    position: relative;
+    background: url(videos/Adg_dubai.jpg) no-repeat;
+    background-size: cover;
+    min-width: 1280px; max-height: 690px;
+  }
+  
   .card{
       display: block;
       margin-left: auto;
       margin-right: auto;
+  }
+
+  .picteam{
+      border: 6px solid #DAA520 ;
+      border-radius: 50%;
   }

@@ -13,7 +13,7 @@ anime.timeline({loop: true})
   }).add({
     targets: '.ml2',
     opacity: 0,
-    duration: 1000000,
+    duration: 10000000,
     easing: "easeOutExpo",
     delay: 1000
   });
@@ -32,7 +32,7 @@ anime.timeline({loop: true})
   }).add({
     targets: '.ml16 .letter  ',
     opacity: 0,
-    duration: 1000000,
+    duration: 10000000,
     easing: "easeOutExpo",
     delay: 1000
   });
@@ -51,7 +51,7 @@ anime.timeline({loop: true})
   }).add({
     targets: '.ml17 .letter  ',
     opacity: 0,
-    duration: 1000000,
+    duration: 10000000,
     easing: "easeOutExpo",
     delay: 1000
   });
@@ -70,7 +70,7 @@ anime.timeline({loop: true})
   }).add({
     targets: '.ml18 .letter  ',
     opacity: 0,
-    duration: 1000000,
+    duration: 10000000,
     easing: "easeOutExpo",
     delay: 1000
   });
