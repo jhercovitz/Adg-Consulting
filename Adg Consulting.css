@@ -17,6 +17,7 @@ h1{
     font-weight: bold;
     text-align: center;
     color: #DAA520;
+    text-shadow: 2px 2px 4px;
 }
 
 h2{
@@ -24,6 +25,7 @@ h2{
     font-weight: normal;
     text-align: center;
     color: #DAA520;
+    text-shadow: 2px 2px 4px;
 }
 h3{
     font-size: 25px;
@@ -33,6 +35,7 @@ h3{
 h4{
     font-size: 30px;
     color: #DAA520;
+    text-shadow: 2px 2px 4px;
 }
 
 p{
@@ -48,6 +51,11 @@ p{
 #p2{
     font-size: 10px;
     color: #DAA520;    
+}
+
+#p3{
+    font-size: 15px;
+    color: ivory;
 }
 
 a{
@@ -74,7 +82,7 @@ header{
 }
 
 footer{
-    height: 280px;
+    height: 320px;
     padding-top: 0px;
     text-align: center;
     background-color: #00006d;
@@ -118,6 +126,7 @@ nav li:hover a{
 }
 
 section{
+    display:flow-root;
     width: 100%;
     border-top: 5px solid #DAA520;
 }
@@ -160,12 +169,22 @@ section{
 .right2{
     float: right;
     width: 49%;
-
 }
 
 .left2{
     float: left;
     width: 49%;
+}
+
+.left3{
+    margin-top: 95px;
+    background-image: url(photos/hands.jpg);
+    background-size: 100% 100%;
+    text-indent: 2em;
+    float: left;
+    width: 35%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .resize{
@@ -277,6 +296,10 @@ section{
 .devis{
     float: right;
     background-color:  #DAA520;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 5px;
 }
 
 .ml2 {
@@ -291,7 +314,7 @@ section{
 
   .ml16 {
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     overflow: hidden;
   }
   
@@ -301,7 +324,7 @@ section{
   }
   .ml17 {
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     overflow: hidden;
   }
   
@@ -311,7 +334,7 @@ section{
   }
   .ml18 {
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     overflow: hidden;
   }
   .ml18 .letter {
@@ -321,9 +344,10 @@ section{
   
   #video{
     position: relative;
-    background: url(videos/Adg_dubai.jpg) no-repeat;
     background-size: cover;
-    min-width: 1280px; max-height: 690px;
+    background-position: center;
+    min-width: 100%; 
+    max-height: 100%;
   }
   
   .card{
@@ -333,6 +357,47 @@ section{
   }
 
   .picteam{
-      border: 6px solid #DAA520 ;
+      border: 6px solid  #9090b3;
       border-radius: 50%;
   }
+
+  #font{
+      font-size: 80px;
+      color: #DAA520;
+      margin-left: 30px;
+  }
+
+  form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 22px;
+    padding-top:8px;
+    padding-bottom: 15px;
+    border-radius: 15px 15px 15px 15px;
+	background-color:#DAA520;
+}
+
+label.left{
+	float: left;
+	font-weight:bold;
+}
+
+#commentaires{
+    border-radius: 4px;
+}
+
+#case{
+    border-radius: 4px;
+}
+
+#submit{
+		background-color: #00006d;
+		border-radius: 4px;
+		color: white;
+		font-size: 1em;
+		height: 40px;
+		width: 96px;
+        border: 0px solid;
+        margin-left: 45%;
+        margin-top: -10px;
+	}

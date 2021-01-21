@@ -36,20 +36,63 @@
        </nav>
        <section>
             <div class="sec">   
-           <h1>Entrer en Contact</h1>
-            <div class="left2">
-                <h3>ADG Consulting</h3>
-               <p id="p1">Adresse: Rue de la Hess 12</p>
-                <p id="p1">1204 Genève</p>
-                <p id="p1">Suisse</p>
-                <p id="p1">Email: info@adgconsulting.ch</p>
-                <p id="p1">Visites uniquement sur rendez-vous.</p>
+                <h1>Entrer en Contact</h1>
+                <p>Grâce à notre écoute, notre réseau et nos conseils, nous vous accompagnons tout au long de votre projet de recherche d’acquisition. Nous pouvons vous trouver ce que vous souhaitez et à votre budget. N’hésitez pas à nous contacter pour une recherche vraiment personnalisée.</p>
+                <p><strong>FORFAIT PRIVILEGE </strong>(Offre détaillée sur demande)</p>
+                <p>Exemple de prestations possibles :</p>
+                <p>- Pré-sélection de biens et présentation sans aucun engagement</p>
+                <p>- Organisation de la visite sur place</p>
+                <p>-  Accompagnement lors de la visite</p>
+                <p>- Mise en relation avec une agence sur place pour la location</p>
+                <p>- Gestion des check-in et check out</p>
+                <p>- Gestion du nettoyage de votre appartement</p>
+                <p>- Mise en place de vos assurances locales</p>
+                <p>...</p>
             </div>
+        </section>
+        <section>
+            <div class="sec">
+                <div class="left3">
+                    <br><h3>ADG Consulting</h3>
+                    <p id="p3">Adresse: Rue de la Hess 12</p>
+                    <p id="p3">1204 Genève</p>
+                    <p id="p3">Suisse</p>
+                    <p id="p3">Email: info@adgconsulting.ch</p>
+                    <p id="p3">Visites uniquement sur rendez-vous.</p><br>
+                </div>
                 <div class="right2">
-                    <h3>Formulaire de contact</h3>
-                    <p>Nom Prénom</p>
-                    <p>Email</p>
-                    <p>numéro de téléphone</p>
+                    <form action="mailto:erko95@hotmail.com" method="get">
+                        <p>
+                          <label for="nom" class="left">Nom :</label> 
+                          <input name="nom" id="case" type="text" size="30" maxlength="30" />
+                        </p>
+                        <p>
+                            <label for="prenom" class="left">Prénom :</label> 
+                            <input name="prenom" id="case" type="text" size="30" maxlength="30" />
+                          </p>
+                          <p>
+                            <label for="tel" class="left">Tel :</label> 
+                            <input name="tel" id="case" type="text" size="30" maxlength="30" />
+                          </p>
+                          <p>
+                            <label for="mail" class="left">Email :</label> 
+                            <input name="mail" id="case" type="text" size="30" maxlength="30" />
+                          </p>
+                        <p>
+                            <label class="left">Pour quel service nous contactez vous ?</label>
+                            <input name="devis" id="devis" type="checkbox" /><label for="devis">Demande de devis</label>
+                            <input name="immobiler" id="immobiler" type="checkbox" /><label for="immobiler">Immobilier</label>
+                            <input name="geneve" id="geneve" type="checkbox" /><label for="geneve">Genève</label>
+                            <br><input name="dubai" id="dubai" type="checkbox" /><label for="dubai">Dubaï</label>
+                            <input name="invest" id="invest" type="checkbox" /><label for="invest">Investissement</label>
+                            <input name="diamond" id="diamond" type="checkbox" /><label for="diamond">ADG Diamond</label>
+                        </p>
+                        <p>
+                            <label for="commentaires" class="left">Commentaires : </label>
+                            <textarea name="commentaires" id="commentaires" cols="30" rows="5"></textarea>
+                        </p>
+                        <button id="submit" type="submit">Envoi</button>
+                    </form>
                 </div>
            </div>
        </section>
