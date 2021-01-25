@@ -43,6 +43,11 @@ p{
     color: #00006d;
 }
 
+.liste{
+    font-size: 18px;
+    color: #00006d;
+
+}
 #p1{
     font-size: 15px;
     color: #DAA520;
@@ -73,6 +78,14 @@ header{
     background-image:url(Photos/Geneve.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;    
+}
+
+.header-nos-services{
+    padding-top: 0px;
+    height: 854px;
+    background-image: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -174,6 +187,7 @@ section{
 .left2{
     float: left;
     width: 49%;
+    margin-bottom: 40px;
 }
 
 .left3{
@@ -185,6 +199,13 @@ section{
     width: 35%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 15px 15px;
+}
+
+.left4{
+    float: left;
+    width: 20%;
+    margin-bottom: 40px;
+    margin-left: 200px;
 }
 
 .resize{
@@ -287,7 +308,7 @@ section{
     background-color: #3b5999;
 }
 .link ul li:nth-child(2) a:hover{
-    background-color: #e4405f;
+    background: linear-gradient(49.2deg, #f9ed32 10%, #ee2a7b 55%, #002aff);
 }
 .link ul li:nth-child(3) a:hover{
     background-color: #FFFC00;
@@ -346,8 +367,8 @@ section{
     position: relative;
     background-size: cover;
     background-position: center;
-    min-width: 100%; 
-    max-height: 100%;
+   /* min-width: 100%; 
+    max-height: 100%;*/
   }
   
   .card{
@@ -398,6 +419,11 @@ label.left{
 		height: 40px;
 		width: 96px;
         border: 0px solid;
-        margin-left: 45%;
+        margin-left: 44%;
         margin-top: -10px;
-	}
+    }
+    
+    #liste-diamond{
+        font-size: 13px;
+        color: #DAA520;
+    }

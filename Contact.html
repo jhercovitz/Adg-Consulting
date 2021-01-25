@@ -5,7 +5,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Adg Consulting.css">
+        <link rel="stylesheet" href="Contact.php">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_dj87uwU6leWkkyEgDHjra');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     </head>
     <body>
        <header>
@@ -61,7 +85,7 @@
                     <p id="p3">Visites uniquement sur rendez-vous.</p><br>
                 </div>
                 <div class="right2">
-                    <form action="mailto:erko95@hotmail.com" method="get">
+                    <form action="" method="get">
                         <p>
                           <label for="nom" class="left">Nom :</label> 
                           <input name="nom" id="case" type="text" size="30" maxlength="30" />
@@ -104,7 +128,6 @@
                                     class="fab fa-facebook"></i></a></li>
                         <li><a href="https://www.instagram.com/adg.consulting/?hl=fr" target="_blank"><i
                                     class="fab fa-instagram"></i></a></li>
-                        <!--voir le background-->
                         <li><a href="https://www.snapchat.com/add/newlife.world" target="_blank"><i
                                     class="fab fa-snapchat"></i></a></li>
                     </ul>
@@ -120,5 +143,6 @@
             </div>
         </footer>
        <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
+       <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
