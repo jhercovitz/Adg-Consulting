@@ -75,4 +75,19 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-  
+  <script type="text/javascript">
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "johann.hercovitz@gmail.com",
+            Password : "06012010l",
+            To : 'johann.hercovitz@gmail.com',
+            From : "erko95@hotmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        )
+        }
+    </script>
+       
