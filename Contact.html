@@ -63,7 +63,7 @@
                     <p id="p3">Visites uniquement sur rendez-vous.</p><br>
                 </div>
                 <div class="right2">
-                    <form method="get">
+                    <form method="post">
                         <p>
                           <label for="nom" class="left">Nom :</label> 
                           <input name="nom" id="case" type="text" size="30" maxlength="30" />
@@ -122,6 +122,20 @@
             </div>
         </footer>
        <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
-       
+       <script type="text/javascript">
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.live.com",
+            Username : "erko95@hotmail.com",
+            Password : "06012010Li",
+            To : 'erko95@hotmail.com',
+            From : "johann.hercovitz@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        )
+        }
+    </script>
     </body>
 </html>
