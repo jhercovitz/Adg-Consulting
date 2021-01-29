@@ -66,19 +66,19 @@
                     <form method="post">
                         <p>
                           <label for="nom" class="left">Nom :</label> 
-                          <input name="nom" id="case" type="text" size="30" maxlength="30" />
+                          <input name="nom" id="case" type="text" required size="30" maxlength="30" />
                         </p>
                         <p>
                             <label for="prenom" class="left">Prénom :</label> 
-                            <input name="prenom" id="case" type="text" size="30" maxlength="30" />
+                            <input name="prenom" id="case" type="text" required size="30" maxlength="30" />
                           </p>
                           <p>
                             <label for="tel" class="left">Tel :</label> 
-                            <input name="tel" id="case" type="text" size="30" maxlength="30" />
+                            <input name="tel" id="case" type="tel" required size="20" maxlength="20" />
                           </p>
                           <p>
                             <label for="mail" class="left">Email :</label> 
-                            <input name="mail" id="case" type="text" size="30" maxlength="30" />
+                            <input name="mail" id="case" type="text" required size="30" maxlength="30" />
                           </p>
                         <p>
                             <label class="left">Pour quel service nous contactez vous ?</label>
@@ -87,7 +87,7 @@
                             <input name="geneve" id="geneve" type="checkbox" /><label for="geneve">Genève</label>
                             <br><input name="dubai" id="dubai" type="checkbox" /><label for="dubai">Dubaï</label>
                             <input name="invest" id="invest" type="checkbox" /><label for="invest">Investissement</label>
-                            <input name="diamond" id="diamond" type="checkbox" /><label for="diamond">ADG Diamond</label>
+                            <input name="diamond" id="diamond" type="checkbox" /><label for="diamond">Carte ADG Diamond</label>
                         </p>
                         <p>
                             <label for="commentaires" class="left">Commentaires : </label>
@@ -125,10 +125,10 @@
        <script type="text/javascript">
         function sendEmail(){
             Email.send({
-            Host : "smtp.live.com",
-            Username : "erko95@hotmail.com",
-            Password : "06012010Li",
-            To : 'erko95@hotmail.com',
+            Host : "smtp.infomaniak.com",
+            Username : "ichem.ay@adgconsulting.ch",
+            Password : "PqmnRFBBy-n7",
+            To : 'ichem.ay@adgconsulting.ch',
             From : "johann.hercovitz@gmail.com",
             Subject : "This is the subject",
             Body : "And this is the body"

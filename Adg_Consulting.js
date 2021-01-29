@@ -75,5 +75,13 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
- 
+ const goTop = Document.querySelector(".gotopbtn");
+
+ window.addEventListener("scroll", () =>{
+   if (window.pageYOffset > 100) {
+     goTop.classList.add("active");
+   } else {
+     goTop.classList.remove("active");
+   }
+ })
        
