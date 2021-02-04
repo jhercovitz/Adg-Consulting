@@ -422,7 +422,7 @@ section{
     padding-top:8px;
     padding-bottom: 15px;
     border-radius: 15px 15px 15px 15px;
-	background-color:#DAA520;
+	background-color:#DAA520; /*voir #d4af37*/
 }
 
 label.left{
@@ -454,3 +454,64 @@ label.left{
         font-size: 13px;
         color: #DAA520;
     }
+
+
+
+    .single-content .title{
+        margin: 0;
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+    }
+    .single-content{
+        position: relative;
+        overflow: hidden;
+        width: 260px;
+        height: 310px;
+        margin-left: 180px;
+        margin-right: 170px;
+        margin-bottom: 50px;
+    }
+    
+    .single-content img{
+        width: 260px;
+        height: 310px;
+        
+    }
+    .single-content .img-text{
+        width: 260px;
+        height: 310px;
+        background: rgba(218,165,32,.7);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: perspective(260px) rotateX(-90deg);
+        transform-origin: center top 0;
+        transition: .5s;
+        padding: 35% 0 0;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .single-content:hover .img-text{
+        opacity: 1;
+        transform: perspective(260px) rotateX(0);
+    }
+
+.single-content .title{
+    bottom: 25px;
+    left: 25px;
+    transition: .9s;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.single-content .title:before{
+    content: "";
+    border-right: 3px solid #fff;
+    margin-right: 10px;
+}
+.single-content:hover .title{
+    bottom: -40px;
+}

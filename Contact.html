@@ -66,28 +66,28 @@
                     <form method="post">
                         <p>
                           <label for="nom" class="left">Nom :</label> 
-                          <input name="nom" id="case" type="text" required size="30" maxlength="30" />
+                          <input name="nom" id="nom" type="text"  size="30" maxlength="30" required>
                         </p>
                         <p>
                             <label for="prenom" class="left">Prénom :</label> 
-                            <input name="prenom" id="case" type="text" required size="30" maxlength="30" />
+                            <input name="prenom" id="prenom" type="text" size="30" maxlength="30" required>
                           </p>
                           <p>
                             <label for="tel" class="left">Tel :</label> 
-                            <input name="tel" id="case" type="tel" required size="20" maxlength="20" />
+                            <input name="tel" id="tel" type="tel"  size="15" maxlength="15" required>
                           </p>
                           <p>
                             <label for="mail" class="left">Email :</label> 
-                            <input name="mail" id="case" type="text" required size="30" maxlength="30" />
+                            <input name="mail" id="mail" type="text"  size="30" maxlength="30" required>
                           </p>
                         <p>
                             <label class="left">Pour quel service nous contactez vous ?</label>
-                            <input name="devis" id="devis" type="checkbox" /><label for="devis">Demande de devis</label>
-                            <input name="immobiler" id="immobiler" type="checkbox" /><label for="immobiler">Immobilier</label>
-                            <input name="geneve" id="geneve" type="checkbox" /><label for="geneve">Genève</label>
-                            <br><input name="dubai" id="dubai" type="checkbox" /><label for="dubai">Dubaï</label>
-                            <input name="invest" id="invest" type="checkbox" /><label for="invest">Investissement</label>
-                            <input name="diamond" id="diamond" type="checkbox" /><label for="diamond">Carte ADG Diamond</label>
+                            <input name="devis" id="chekbox" type="checkbox" /><label for="devis">Demande de devis</label>
+                            <input name="immobiler" id="chekbox" type="checkbox" /><label for="immobiler">Immobilier</label>
+                            <input name="geneve" id="chekbox" type="checkbox" /><label for="geneve">Genève</label>
+                            <br><input name="dubai" id="chekbox" type="checkbox" /><label for="dubai">Dubaï</label>
+                            <input name="invest" id="chekbox" type="checkbox" /><label for="invest">Investissement</label>
+                            <input name="diamond" id="chekbox" type="checkbox" /><label for="diamond">Carte ADG Diamond</label>
                         </p>
                         <p>
                             <label for="commentaires" class="left">Commentaires : </label>
@@ -123,18 +123,39 @@
         </footer>
        <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
        <script type="text/javascript">
+      // function verif_champ(){
+           //var nom =document.getElementById("nom").value;
+           //if(nom == ""){
+             //  alert("Un champ n'est pas remplie");
+             //  return false;
+          //  }
+           // return true;
+       // }
+
         function sendEmail(){
-            Email.send({
-            Host : "smtp.infomaniak.com",
-            Username : "ichem.ay@adgconsulting.ch",
-            Password : "PqmnRFBBy-n7",
-            To : 'ichem.ay@adgconsulting.ch',
-            From : "johann.hercovitz@gmail.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        )
+        var formulaire = document.getElementById("nom").value;
+        var from = document.getElementById("mail").value;
+        var checkedvalue = null;
+        var checkbox = document.getElementById("checkbox");
+        for(var i=0; checkbox[i]; ++i){
+            if(checkbox[i].checked){
+                checkedvalue = checkbox[i].value;
+                break;
+            }
+        }
+
+           // Email.send({
+           // Host : "smtp.infomaniak.com",
+            //Username : "ichem.ay@adgconsulting.ch",
+            //Password : "PqmnRFBBy-n7",
+            //To : 'ichem.ay@adgconsulting.ch',
+           // From : from,
+            //Subject : checkedvalue,
+           // Body : "And this is the body"
+       // }).then(
+         // message => alert(from)
+        //)
+        alert(checkedvalue);
         }
     </script>
     </body>
