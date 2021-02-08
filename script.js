@@ -61,7 +61,7 @@ function processFormData(oForm) {
 	}
 	if (!checkEmail(email)) {
 		valid = false
-		alert("Format email invalid")
+		alert("Format email invalide")
 	}
 
 	if (valid) {
@@ -74,7 +74,7 @@ function processFormData(oForm) {
 			Subject: "a définir",
 			Body: "And this is the body"
 		}).then(
-			alert("Email envoyée")
+			alert("Email envoyé")
 		)
 	}
 
