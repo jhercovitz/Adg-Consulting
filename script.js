@@ -89,7 +89,7 @@ function processFormData(oForm) {
 		valid = false
 		alert("Format email invalid")
 	}
-    
+
 	if (valid) {
 		Email.send({
 			Host: "smtp.infomaniak.com",
@@ -103,6 +103,7 @@ function processFormData(oForm) {
 
 			if (res === "OK") {
 				alert("Email envoyée 😀")
+				data = []
 			} else {
 				alert("une erreur est survenu ! 😏")
 			}
