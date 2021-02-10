@@ -75,7 +75,7 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
- const goTop = Document.querySelector(".gotopbtn");
+ /*const goTop = Document.querySelector(".gotopbtn");
 
  window.addEventListener("scroll", () =>{
    if (window.pageYOffset > 100) {
@@ -83,5 +83,13 @@ anime.timeline({loop: true})
    } else {
      goTop.classList.remove("active");
    }
- })
+ })*/
+
+ const animatedTexts = document.querySelectorAll('.animated-text');
+
+ function animateText(animatedText){
+   console.log(animatedText);
+ }
+ animatedTexts.forEach(animateText);
+
        
