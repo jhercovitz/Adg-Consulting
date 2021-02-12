@@ -1,3 +1,42 @@
+const animatedTexts = document.querySelectorAll('.animated-text');
+
+  function animateText(animatedText) {
+      const text = animatedText.textContent;
+      let speed = animatedText.getAttribute("speed");
+      let delay = animatedText.getAttribute("delay");
+      if (speed == null) {
+          speed = 150;
+      }
+      if (delay == null){
+          delay = 0;
+      }
+  
+    animatedText.innerHTML = '';
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] == ' ') {
+            animatedText.innerHTML +=' ';
+        }
+        animatedText.innerHTML += `<span>${text[i]}</span>`;
+    }
+  
+    setTimeout(function(){
+      let idx = 0;
+    function writeChar() {
+        const span = animatedText.querySelectorAll('span')[idx];
+        span.classList.add('fade');
+        idx++;
+        if (idx == text.length) {
+            clearInterval(writeCharInterval);
+        }
+    }
+  
+    let writeCharInterval = setInterval(writeChar, speed);
+    },delay);
+  
+  }
+  animatedTexts.forEach(animateText);
+
+
 var textWrapper = document.querySelector('.ml2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -22,74 +61,11 @@ anime.timeline({loop: true})
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
 
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml16 .letter  ',
-    translateY: [-100,0],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 30 * i
-  }).add({
-    targets: '.ml16 .letter  ',
-    opacity: 0,
-    duration: 10000000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-
-  var textWrapper = document.querySelector('.ml17');
-  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
 
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml17 .letter  ',
-    translateY: [-100,0],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 30 * i
-  }).add({
-    targets: '.ml17 .letter  ',
-    opacity: 0,
-    duration: 10000000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-
-  var textWrapper = document.querySelector('.ml18');
-  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
 
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml18 .letter  ',
-    translateY: [-100,0],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 30 * i
-  }).add({
-    targets: '.ml18 .letter  ',
-    opacity: 0,
-    duration: 10000000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+  
 
- /*const goTop = Document.querySelector(".gotopbtn");
-
- window.addEventListener("scroll", () =>{
-   if (window.pageYOffset > 100) {
-     goTop.classList.add("active");
-   } else {
-     goTop.classList.remove("active");
-   }
- })*/
-
- const animatedTexts = document.querySelectorAll('.animated-text');
-
- function animateText(animatedText){
-   console.log(animatedText);
- }
- animatedTexts.forEach(animateText);
 
        

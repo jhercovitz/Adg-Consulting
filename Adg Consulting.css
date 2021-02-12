@@ -515,3 +515,19 @@ label.left{
 .single-content:hover .title{
     bottom: -50px;
 }
+
+.animated-text span:not(.fade) {
+    opacity:0;
+}
+
+.animated-text span{
+    transition: all .4s;
+    display: inline-block;
+}
+
+.animated-text--typing span.fade + span:not(.fade) {
+    transition: none;
+    background:  #DAA520;
+    opacity: 1;
+    color: transparent;
+}
