@@ -1,117 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-    <head>
-        <title>ADG Consulting</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Adg Consulting.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-    </head>
-    <body>
-       <header>
+
+<head>
+    <title>ADG Consulting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Adg Consulting.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <header>
         <div class="logo">
             <img src="Photos/Adg_logo.png" alt="logo adg" width="220px">
         </div>
-       </header>
-       <nav>
-           <div class="table">
+    </header>
+    <nav>
+        <div class="table">
+            <ul>
+                <li class="menu-ind">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="menu-qui">
+                    <a href="Qui sommes nous.html">Qui Sommes Nous</a>
+                </li>
+                <li class="menu-ser">
+                    <a href="Nos services.html">Nos Services</a>
+                </li>
+                <li class="menu-dia">
+                    <a href="Diamond.html">ADG Diamond</a>
+                </li>
+                <li class="menu-con">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="sec">
+            <h1>Entrer en Contact</h1>
+            <p>Grâce à notre écoute, notre réseau et nos conseils, nous vous accompagnons tout au long de votre projet
+                de recherche d’acquisition. Nous pouvons vous trouver ce que vous souhaitez et à votre budget. N’hésitez
+                pas à nous contacter pour une recherche vraiment personnalisée.</p>
+            <p><strong>FORFAIT PRIVILEGE </strong>(Offre détaillée sur demande)</p>
+            <p>Exemple de prestations possibles :</p>
+            <p>- Pré-sélection de biens et présentation sans aucun engagement</p>
+            <p>- Organisation de la visite sur place</p>
+            <p>- Accompagnement lors de la visite</p>
+            <p>- Mise en relation avec une agence sur place pour la location</p>
+            <p>- Gestion des check-in et check out</p>
+            <p>- Gestion du nettoyage de votre appartement</p>
+            <p>- Mise en place de vos assurances locales</p>
+            <p>...</p>
+        </div>
+    </section>
+    <section>
+        <div class="sec">
+            <div class="left3">
+                <br>
+                <h3>ADG Consulting</h3>
+                <p id="p3">Adresse: Rue de la Hess 12</p>
+                <p id="p3">1204 Genève</p>
+                <p id="p3">Suisse</p>
+                <p id="p3">Email: info@adgconsulting.ch</p>
+                <p id="p3">Visites uniquement sur rendez-vous.</p><br>
+            </div>
+            <div class="right2">
+                <form method="post">
+                    <p>
+                        <label for="nom" class="left">Nom :</label>
+                        <input name="nom" id="nom" type="text" size="30" minlength="3" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="prenom" class="left">Prénom :</label>
+                        <input name="prenom" id="prenom" type="text" size="30" minlength="3" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="tel" class="left">Tel :</label>
+                        <input name="tel" id="tel" type="tel"  size="15" maxlength="15" required>
+                    </p>
+                    <p>
+                        <label for="mail" class="left">Email :</label>
+                        <input name="email" id="mail" type="email" size="30" minlength="3" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label class="left">Pour quel service nous contactez vous ?</label>
+                        <input name="devis" id="chekbox" type="checkbox" /><label for="devis">Demande de devis</label>
+                        <input name="immobiler" id="chekbox" type="checkbox" /><label for="immobiler">Immobilier</label>
+                        <input name="geneve" id="chekbox" type="checkbox" /><label for="geneve">Genève</label>
+                        <br>
+                        <input name="dubai" id="chekbox" type="checkbox" /><label for="dubai">Dubaï</label>
+                        <input name="Investissement" id="chekbox" type="checkbox" /><label
+                            for="Investissement">Investissement</label>
+                        <input name="diamond" id="chekbox" type="checkbox" /><label for="diamond">Carte ADG
+                            Diamond</label>
+                    </p>
+                    <p>
+                        <label for="commentaires" class="left">Commentaires : </label>
+                        <textarea name="commentaires" id="commentaires" cols="30" rows="5"></textarea>
+                    </p>
+                    <input id="submit" type="button" value="Envoyer" onclick="processFormData(this.form);" />
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="border">
+            <div class="link">
                 <ul>
-                    <li class="menu-ind">
-                        <a href="index.html">Accueil</a>
-                    </li>
-                    <li class="menu-qui">
-                        <a href="Qui sommes nous.html">Qui Sommes Nous</a>
-                    </li>
-                    <li class="menu-ser">
-                        <a href="Nos services.html">Nos Services</a>
-                    </li>
-                    <li class="menu-dia">
-                        <a href="Diamond.html">ADG Diamond</a>
-                    </li>
-                    <li class="menu-con">
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li><a href="https://m.facebook.com/ADG-consulting-101913541773730" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/adg.consulting/?hl=fr" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.snapchat.com/add/newlife.world" target="_blank"><i
+                                class="fab fa-snapchat"></i></a></li>
                 </ul>
             </div>
-       </nav>
-       <section>
-            <div class="sec">   
-                <h1 class="animated-text animated-text--typing" speed='100' delay='1800'>Entrer en Contact</h1>
-                <p>Grâce à notre écoute, notre réseau et nos conseils, nous vous accompagnons tout au long de votre projet de recherche d’acquisition. Nous pouvons vous trouver ce que vous souhaitez et à votre budget. N’hésitez pas à nous contacter pour une recherche vraiment personnalisée.</p>
-                <br><br>
+        </div>
+        <h3>Horaires</h3>
+        <div class="social-menu">
+            <div class="horaires">
+                <p id="p1">Horaire de Genève (GMT+1)<br>Lundi-Vendredi: 9 h à 17h<br>Samedi: 9 à 12h<br>Dimanche:
+                    Fermé</p><br>
+                <p id="p2">Copyright 2021 Johann Hercovitz - Toute reproduction interdite</p>
             </div>
-        </section>
-        <section>
-            <div class="sec">
-                <div class="left3">
-                    <br><h3>ADG Consulting</h3>
-                    <p id="p3">Adresse: Rue de la Hess 12</p>
-                    <p id="p3">1204 Genève</p>
-                    <p id="p3">Suisse</p>
-                    <p id="p3">Email: info@adgconsulting.ch</p>
-                    <p id="p3">Visites uniquement sur rendez-vous.</p><br>
-                </div>
-                <div class="right2">
-                    <form method="post">
-                        <p>
-                          <label for="nom" class="left">Nom :</label> 
-                          <input name="nom" id="nom" type="text"  size="30" maxlength="30" required>
-                        </p>
-                        <p>
-                            <label for="prenom" class="left">Prénom :</label> 
-                            <input name="prenom" id="prenom" type="text" size="30" maxlength="30" required>
-                          </p>
-                          <p>
-                            <label for="tel" class="left">Tel :</label> 
-                            <input name="tel" id="tel" type="tel"  size="15" maxlength="15" required>
-                          </p>
-                          <p>
-                            <label for="mail" class="left">Email :</label> 
-                            <input name="mail" id="mail" type="text"  size="30" maxlength="30" required>
-                          </p>
-                        <p>
-                            <label class="left">Pour quel service nous contactez vous ?</label>
-                            <input name="devis" id="chekbox" type="checkbox" /><label for="devis">Demande de devis</label>
-                            <input name="immobiler" id="chekbox" type="checkbox" /><label for="immobiler">Immobilier</label>
-                            <input name="geneve" id="chekbox" type="checkbox" /><label for="geneve">Genève</label>
-                            <br><input name="dubai" id="chekbox" type="checkbox" /><label for="dubai">Dubaï</label>
-                            <input name="invest" id="chekbox" type="checkbox" /><label for="invest">Investissement</label>
-                            <input name="diamond" id="chekbox" type="checkbox" /><label for="diamond">Carte ADG Diamond</label>
-                        </p>
-                        <p>
-                            <label for="commentaires" class="left">Commentaires : </label>
-                            <textarea name="commentaires" id="commentaires" cols="30" rows="5"></textarea>
-                        </p>
-                        <input id="submit" type="button" value="Envoyer" onclick="sendEmail()"/>
-                    </form>
-                    
-                </div>
-           </div>
-       </section>
-        <footer>
-            <div class="border">
-                <div class="link">
-                    <ul>
-                        <li><a href="https://m.facebook.com/ADG-consulting-101913541773730" target="_blank"><i
-                                    class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/adg.consulting/?hl=fr" target="_blank"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.snapchat.com/add/newlife.world" target="_blank"><i
-                                    class="fab fa-snapchat"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <h3>Horaires</h3>
-            <div class="social-menu">
-                <div class="horaires">
-                    <p id="p1">Horaire de Genève (GMT+1)<br>Lundi-Vendredi: 9 h à 17h<br>Samedi: 9 à 12h<br>Dimanche:
-                        Fermé</p><br>
-                    <p id="p2">Copyright 2021 Johann Hercovitz - Toute reproduction interdite</p>
-                </div>
-            </div>
-        </footer>
-       <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
-       <script type="text/javascript" src="Adg_Consulting.js"></script>
-    </body>
+        </div>
+    </footer>
+    <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
