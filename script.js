@@ -1,3 +1,5 @@
+//import {info} from './hide.js';
+
 
 let ListHandler = new Object();
 let CheckboxHandler = new Object();
@@ -90,11 +92,16 @@ function processFormData(oForm) {
 		alert("Format email invalide")
 	}
 
+
 	if (valid) {
 		Email.send({
-			Host: "smtp.infomaniak.com",
+			/*Host: "smtp.infomaniak.com",
 			Username: "ichem.ay@adgconsulting.ch",
-			Password: "PqmnRFBBy-n7",
+			Password: "PqmnRFBBy-n7",*/
+			
+			Host: info.host,
+			Username : info.username,
+			Password : info.password,
 			To: 'ichem.ay@adgconsulting.ch',
 			From: email[0],
 			Subject: `Je souhaiterais avoir des informations concernant : ${subject}`,
@@ -105,7 +112,7 @@ function processFormData(oForm) {
 				alert("Email envoyée 😀")
 				data = []
 			} else {
-				alert("une erreur est survenu ! 😏")
+				alert("une erreur est survenu ! 😕")
 			}
 
 		}
