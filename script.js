@@ -1,4 +1,4 @@
-//import {info} from './hide.js';
+import {info} from './hide.js';
 
 
 let ListHandler = new Object();
@@ -95,13 +95,9 @@ function processFormData(oForm) {
 
 	if (valid) {
 		Email.send({
-			/*Host: "smtp.infomaniak.com",
+			Host: "smtp.infomaniak.com",
 			Username: "ichem.ay@adgconsulting.ch",
-			Password: "PqmnRFBBy-n7",*/
-			
-			Host: info.host,
-			Username : info.username,
-			Password : info.password,
+			Password: "PqmnRFBBy-n7",
 			To: 'ichem.ay@adgconsulting.ch',
 			From: email[0],
 			Subject: `Je souhaiterais avoir des informations concernant : ${subject}`,
