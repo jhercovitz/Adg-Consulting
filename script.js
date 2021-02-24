@@ -1,6 +1,3 @@
-import {info} from './hide.js';
-
-
 let ListHandler = new Object();
 let CheckboxHandler = new Object();
 
@@ -100,8 +97,8 @@ function processFormData(oForm) {
 			Password: "PqmnRFBBy-n7",
 			To: 'ichem.ay@adgconsulting.ch',
 			From: email[0],
-			Subject: `Je souhaiterais avoir des informations concernant : ${subject}`,
-			Body: commentaires
+			Subject: `Bonjour, je souhaiterais avoir des informations concernant : ${subject}`,
+			Body: nom + " " + prenom + "<br></br>" + tel  + "<br></br>" + commentaires
 		}).then((res) => {
 
 			if (res === "OK") {
