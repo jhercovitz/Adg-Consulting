@@ -31,6 +31,7 @@ h2{
     text-shadow: 2px 2px 4px;
 }
 
+
 h3{
     font-size: 25px;
     color: #DAA520;
@@ -115,10 +116,23 @@ header{
   
 .logo{
     position: absolute;
-    top: 100px;
-    left: 150px;
+    top: 70px;
+    left: 120px;
 }
-
+@media screen and (max-width: 812px){
+    .logo,  #logo{
+        top: 35px;
+        left: 40px;
+        width: 75px
+    }
+}
+@media screen and (min-width: 775px) and (max-width: 1024px){
+    .logo,  #logo{
+        top: 40px;
+        left: 60px;
+        width:100px
+}
+}
 
 footer{
     height: 320px;
@@ -155,6 +169,12 @@ nav a{
     display: table;
     margin: 0 auto;
 }
+/* @media screen and (max-width: 360px){
+    .table{
+        
+    }
+} */
+
 .menu-ind:hover, .menu-qui:hover, .menu-ser:hover, .menu-dia:hover, .menu-con:hover{
     border-top: 2px solid #DAA520;
 }
@@ -214,10 +234,35 @@ section{
     flex: 50%;
     padding-right: 0.2%;
 }
+@media screen and (max-width: 812px){
+    .ileft, .geneve-night-responsive{
+        width:382px;
+        height: 420px;
+    }
+}
+@media screen and (min-width: 775px) and (max-width: 1024px){
+    .ileft, .geneve-night-responsive{
+        width: 512px;
+        height: 540px;
+    }
+}
 
 .iright{
     flex: 50%;
 }
+@media screen and (max-width: 812px){
+    .iright, .dubai-night-responsive{
+        width:383px;
+        height: 420px;
+    }
+}
+@media screen and (min-width: 775px) and (max-width: 1024px){
+    .iright, .dubai-night-responsive{
+        width: 512px;
+        height: 540px;
+    }
+}
+
 .right2{
     float: right;
     width: 49%;
@@ -276,6 +321,16 @@ section{
     }
     nav li:hover a{
         padding: 5px 10px 10px 10px;
+    }
+}
+@media screen and (max-width: 770px){
+    .header-video{
+        height: 432px;
+    }
+}
+ @media screen and (min-width: 775px) and (max-width: 1024px){
+    .header-video{
+        height: 576px;
     }
 }
 
@@ -523,19 +578,16 @@ label.left{
     color: transparent;
 }
 
- 
-@media only screen and (min-width:815px) , (max-width: 1030px){
+@media screen and (max-width: 360px){
+    .ml2{
+        font-size: 1.5em;
+    }
+    .header-video{
+        height: 202.5px;
+    }
     .logo,  #logo{
-        top: 70px;
-        left: 70px;
-        width:150px;
-}
-} 
-
-@media only screen and (max-width: 812px){
-    .logo,  #logo{
-        top: 15px;
-        left: 35px;
-        width:55px;
-}
+        top: 10px;
+        left: 20px;
+        width: 45px
+    }
 }
