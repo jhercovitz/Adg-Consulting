@@ -365,10 +365,10 @@ section{
     }
 }
 
-.social-menu{
+/* .social-menu{
     display: flex;
     padding-top: 20px;
-}
+} */
 
 .link{
     width: 100%;
@@ -580,7 +580,10 @@ label.left{
 
 @media screen and (max-width: 360px){
     .ml2{
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+    header{
+        height: 200px;
     }
     .header-video{
         height: 202.5px;
@@ -589,5 +592,69 @@ label.left{
         top: 10px;
         left: 20px;
         width: 45px
+    }
+    p{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 19px;
+    }
+    .ileft, .geneve-night-responsive{
+        width:179px;
+        height: 220px;
+    }
+    .iright, .dubai-night-responsive{
+        width:180px;
+        height: 220px;
+    }
+    #p1{
+        font-size: 8px;
+    }
+    #p2{
+        font-size: 5px;   
+    }
+    footer{
+        height: 200px;
+    }
+    
+    .link ul li .fab{
+        font-size: 22px;
+    }
+    .link{
+        height: 42px;
+    }
+    .table{
+        height: 40px;
+        display: flex;
+    }
+    nav li a {
+        font-size: 7.8px;
+    }
+    .single-content img {
+        width: 150px;
+        height: 180px;
+    }
+    .single-content {
+        position: relative;
+        margin-left: 0px;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+    .liste {
+        font-size: 12px;
+    }
+    .images{
+        margin-left: 0px;
+    }
+    .geneve2-responsive,.dubai3-responsive{
+        width: 180px;
+        height: 220px;
     }
 }
