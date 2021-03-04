@@ -135,7 +135,7 @@ header{
 }
 
 footer{
-    height: 320px;
+    height: 280px;
     padding-top: 0px;
     text-align: center;
     background-color: #00006d;
@@ -229,6 +229,11 @@ section{
     display: flex;
     padding-bottom: 3%;
 }
+.images_services{
+    border-top: none;
+    display: flex;
+    padding-bottom: 3%;
+}
 
 .ileft{
     flex: 50%;
@@ -267,7 +272,10 @@ section{
     float: right;
     width: 49%;
 }
-
+.right3{
+    float: right;
+    width: 49%;
+}
 .left2{
     float: left;
     width: 49%;
@@ -364,11 +372,6 @@ section{
         display: none;
     }
 }
-
-/* .social-menu{
-    display: flex;
-    padding-top: 20px;
-} */
 
 .link{
     width: 100%;
@@ -594,7 +597,7 @@ label.left{
         width: 45px
     }
     p{
-        font-size: 12px;
+        font-size: 13px;
     }
     h3{
         font-size: 15px;
@@ -648,13 +651,201 @@ label.left{
         margin-bottom: 0px;
     }
     .liste {
-        font-size: 12px;
+        font-size: 12.3px;
     }
-    .images{
+    .images_services{
+        margin-left: 0px;
+        height: 400px;
+    }
+    .geneve2-responsive{
+        width: 179px;
+        height: 195px;
+    }
+    .dubai3-responsive{
+        width: 180px;
+        height: 195px;
+    }
+    .single-content .title{
+        font-size: 13px;
+        left: 15px;
+    }
+    .geneve_night2-responsive, .dubai5-responsive{
+        display: none;
+    }
+    .left4{
+        width: 40%;
+        margin-left: 20px;
+    }
+    .right2{
+        width: 45%;
         margin-left: 0px;
     }
-    .geneve2-responsive,.dubai3-responsive{
-        width: 180px;
-        height: 220px;
+    .devis{
+        width: 110px;
+        height: 23px;
+    }
+    .a1 {
+        font-size: 10px;
+    }
+    footer {
+        height: 180px;
+    }
+    #p3{
+        font-size: 11px;
+    }
+    .left3{
+        width: 220px;
+        height: 195px;
+        margin-left: 60px;
+        margin-top: 20px;
+        float: none;
+        padding-top: 1px;
+    }
+    #p4{
+        font-size: 13.5px;
+    }
+    .right3 {
+        width: 310px;
+        margin-left: 25px;
+    }
+    #submit{
+        height: 30px;
+        width: 66px;
+    }
+    label.left {
+        float: none;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #card {
+        margin-left: 33%;
+    }
+    .card{
+        width:130px;
+    }
+    form{
+        padding-left: 8px;
+    }
+}
+
+@media screen and (min-width: 365px) and (max-width: 740px){
+    header {
+        height: 320px;
+    }
+    .header-video {
+        height: 416px;
+    }
+    .ml2 {
+        font-size: 1.8em;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .ileft, .geneve-night-responsive {
+        width: 369px;
+        height: 350px;
+    }
+    .iright, .dubai-night-responsive {
+        width: 370px;
+        height: 350px;
+    }
+    .link{
+        height: 40px;
+    }
+    .link ul li .fab{
+        font-size: 27px;
+    }
+    #p1 {
+        font-size: 12px;
+    }
+    #p2{
+        font-size: 8px;
+    }
+    footer {
+        height: 227px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    .single-content img {
+        width: 150px;
+        height: 180px;
+    }
+    .single-content {
+        position: relative;
+        margin-left: 78px;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+    .single-content .title{
+        font-size: 12.5px;
+        left: 12px;
+    }
+    .liste {
+        font-size: 13px;
+    }
+    .images_services{
+        margin-left: 0px;
+        height: 410px;
+    }
+    .geneve2-responsive{
+        width: 182.8px;
+        height: 195px;
+    }
+    .dubai3-responsive{
+        width: 182.8px;
+        height: 195px;
+    }
+    .geneve_night2-responsive, .dubai5-responsive{
+    display: none;
+    }
+    .images_services{
+        margin-left: 0px;
+        height: 200px;
+    }
+    .devis{
+        width: 120px;
+        height: 25px;
+    }
+    .a1 {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #card {
+        margin-left: 40%;
+    }
+    .card{
+        width:150px;
+    }
+    form{
+        padding-left: 12px;
+    }
+    
+    #p4{
+        font-size: 13.5px;
+    }
+    .right3 {
+        width: 350px;
+        margin-left: 25px;
+    }
+    #submit{
+        height: 30px;
+        width: 66px;
+    }
+    #p3{
+        font-size: 11px;
+    }
+    .left3{
+        width: 35%;
+    }
+    label.left {
+        float: none;
     }
 }
