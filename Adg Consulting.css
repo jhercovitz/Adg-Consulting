@@ -98,14 +98,6 @@ header{
     width: 100%;
     height: 100%;
 }
-@media screen and (max-width: 1024px){
-    .video{
-       /* min-width: 1024px;
-        height: 854px;
-        display: inline;*/
-        width: auto;
-    }
-} 
 
 #video{
     position: relative;
@@ -118,20 +110,6 @@ header{
     position: absolute;
     top: 70px;
     left: 120px;
-}
-@media screen and (max-width: 812px){
-    .logo,  #logo{
-        top: 35px;
-        left: 40px;
-        width: 75px
-    }
-}
-@media screen and (min-width: 775px) and (max-width: 1024px){
-    .logo,  #logo{
-        top: 40px;
-        left: 60px;
-        width:100px
-}
 }
 
 footer{
@@ -169,11 +147,6 @@ nav a{
     display: table;
     margin: 0 auto;
 }
-/* @media screen and (max-width: 360px){
-    .table{
-        
-    }
-} */
 
 .menu-ind:hover, .menu-qui:hover, .menu-ser:hover, .menu-dia:hover, .menu-con:hover{
     border-top: 2px solid #DAA520;
@@ -239,33 +212,9 @@ section{
     flex: 50%;
     padding-right: 0.2%;
 }
-@media screen and (max-width: 812px){
-    .ileft, .geneve-night-responsive{
-        width:382px;
-        height: 420px;
-    }
-}
-@media screen and (min-width: 775px) and (max-width: 1024px){
-    .ileft, .geneve-night-responsive{
-        width: 512px;
-        height: 540px;
-    }
-}
 
 .iright{
     flex: 50%;
-}
-@media screen and (max-width: 812px){
-    .iright, .dubai-night-responsive{
-        width:383px;
-        height: 420px;
-    }
-}
-@media screen and (min-width: 775px) and (max-width: 1024px){
-    .iright, .dubai-night-responsive{
-        width: 512px;
-        height: 540px;
-    }
 }
 
 .right2{
@@ -331,16 +280,6 @@ section{
         padding: 5px 10px 10px 10px;
     }
 }
-@media screen and (max-width: 770px){
-    .header-video{
-        height: 432px;
-    }
-}
- @media screen and (min-width: 775px) and (max-width: 1024px){
-    .header-video{
-        height: 576px;
-    }
-}
 
 .gotopbtn{
     position: fixed;
@@ -366,11 +305,6 @@ section{
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
-}
-@media screen and (max-width: 1024px){
-    .gotopbtn{
-        display: none;
-    }
 }
 
 .link{
@@ -582,6 +516,9 @@ label.left{
 }
 
 @media screen and (max-width: 360px){
+    .gotopbtn{
+        display: none;
+    }
     .ml2{
         font-size: 1.3em;
     }
@@ -695,7 +632,7 @@ label.left{
     }
     .left3{
         width: 220px;
-        height: 195px;
+        height: 175px;
         margin-left: 60px;
         margin-top: 20px;
         float: none;
@@ -705,12 +642,14 @@ label.left{
         font-size: 13.5px;
     }
     .right3 {
-        width: 310px;
-        margin-left: 25px;
+        width: 290px;
+        margin-left: 32px;
+        float:none;
     }
     #submit{
         height: 30px;
         width: 66px;
+        margin-left: 95px;
     }
     label.left {
         float: none;
@@ -725,11 +664,20 @@ label.left{
         width:130px;
     }
     form{
-        padding-left: 8px;
+        padding-left: 10px;
+        width: 260px;
     }
 }
 
-@media screen and (min-width: 365px) and (max-width: 740px){
+@media screen and (min-width: 377px) and (max-width: 740px){
+    .gotopbtn{
+        display: none;
+    }
+    .logo,  #logo{
+        top: 30px;
+        left: 50px;
+        width: 75px;
+    }
     header {
         height: 320px;
     }
@@ -829,7 +777,7 @@ label.left{
     }
     
     #p4{
-        font-size: 13.5px;
+        font-size: 15.6px;
     }
     .right3 {
         width: 350px;
@@ -838,6 +786,7 @@ label.left{
     #submit{
         height: 30px;
         width: 66px;
+        margin-left: 120px;
     }
     #p3{
         font-size: 11px;
@@ -847,5 +796,447 @@ label.left{
     }
     label.left {
         float: none;
+    }
+}
+
+@media screen and (min-width: 742px) and (max-width: 770px){
+    header {
+        height: 380px;
+    }
+    .gotopbtn{
+        display: none;
+    }
+    .header-video {
+        height: 432px;
+    }
+    .video{
+        width: auto;
+    }
+    .logo,  #logo{
+        top: 40px;
+        left: 50px;
+        width: 100px
+    }
+    nav {
+        height: 42px;
+    }
+    nav li a {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .ml2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .ileft, .geneve-night-responsive {
+        width: 382px;
+        height: 400px;
+    }
+    .iright, .dubai-night-responsive{
+        width:383px;
+        height: 400px;
+    }
+    .link {
+        height: 45px;
+    }
+    .link ul li .fab{
+        font-size: 30px;
+    }
+    #p1 {
+        font-size: 12px;
+    }
+    #p2 {
+        font-size: 9px;
+    }
+    footer {
+        height: 237px;
+    }
+    h4 {
+        font-size: 27px;
+    }
+    .single-content img {
+        width: 190px;
+        height: 210px;
+    }
+    .single-content {
+        position: relative;
+        margin-left: 68px;
+        width: 190px;
+        height: 210px;
+        margin-bottom: 0px;
+    }
+    .single-content .title{
+        font-size: 14px;
+        left: 13px;
+    }
+    .liste {
+        font-size: 16px;
+    }
+    .images_services {
+        margin-left: 0px;
+        height: 210px;
+    }
+    .geneve2-responsive {
+        width: 189.5px;
+        height: 210px;
+    }
+    .dubai3-responsive{
+        width: 189.5px;
+        height: 210px;
+    }
+    .geneve_night2-responsive, .dubai5-responsive{
+    display: none;
+    }
+    .devis {
+        width: 140px;
+        height: 28px;
+    }
+    #card {
+        margin-left: 40%;
+        height: 130px;
+    }
+    .card{
+        width:170px;
+    }
+    a {
+        display: inline-block;
+    }
+    form{
+        padding-left: 12px;
+    }
+    
+    #p4{
+        font-size: 16.5px;
+    }
+    .right3 {
+        width: 356px;
+        margin-left: 25px;
+    }
+    #submit{
+        height: 30px;
+        width: 66px;
+        margin-left: 120px;
+    }
+    #p3{
+        font-size: 12px;
+    }
+    .left3{
+        width: 42%;
+    }
+    label.left {
+        float: none;
+    }
+    h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 775px) and (max-width: 1024px){
+    .gotopbtn{
+        display: none;
+    }
+    .header-video{
+        height: 576px;
+    }
+    .logo,  #logo{
+        top: 50px;
+        left: 70px;
+        width: 130px;
+    }
+    nav {
+        height: 53px;
+    }
+    nav li a {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 37px;
+    }
+    .ml2 {
+        font-weight: 700;
+        font-size: 2.2em;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .ileft, .geneve-night-responsive {
+        width: 510px;
+        height: 450px;
+    }
+    .iright, .dubai-night-responsive{
+        width:511px;
+        height: 450px;
+    }
+    .link {
+        height: 50px;
+    }
+    .link ul li .fab {
+        font-size: 32px;
+    }
+    #p1 {
+        font-size: 13px;
+    }
+    #p2 {
+        font-size: 9px;
+    }
+    footer {
+        height: 262px;
+    }
+    header {
+        height: 500px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    .single-content img {
+        width: 210px;
+        height: 230px;
+    }
+    .single-content {
+        position: relative;
+        margin-left: 100px;
+        width: 210px;
+        height: 230px;
+        margin-bottom: 0px;
+    }
+    .single-content .title{
+        font-size: 14px;
+        left: 13px;
+    }
+    .liste {
+        font-size: 17px;
+    }
+    .images_services {
+        margin-left: 0px;
+        height: 260px;
+    }
+    .geneve2-responsive {
+        width: 253px;
+        height: 260px;
+    }
+    .dubai3-responsive{
+        width: 253px;
+        height: 260px;
+    }
+    .geneve_night2-responsive, .dubai5-responsive{
+    display: none;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    #card {
+        margin-left: 40%;
+        height: 150px;
+    }
+    .card{
+        width:195px;
+    }
+    a {
+        display: inline-block;
+    }
+    form{
+        padding-left: 12px;
+    }
+    
+    #p4{
+        font-size: 15.6px;
+    }
+    .right3 {
+        width: 520px;
+        margin-left: 25px;
+    }
+    #submit {
+        height: 38px;
+        width: 75px;
+        margin-left: 40%;
+    }
+    #p3{
+        font-size: 13px;
+    }
+    .left3{
+        width: 35%;
+    }
+    label.left {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 362px) and (max-width: 375px){
+    .gotopbtn{
+        display: none;
+    }
+    .ml2{
+        font-size: 1.3em;
+    }
+    header{
+        height: 200px;
+    }
+    .header-video{
+        height: 202.5px;
+    }
+    .logo,  #logo{
+        top: 10px;
+        left: 20px;
+        width: 45px
+    }
+    p{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 19px;
+    }
+    .ileft, .geneve-night-responsive{
+        width:179px;
+        height: 220px;
+    }
+    .iright, .dubai-night-responsive{
+        width:180px;
+        height: 220px;
+    }
+    #p1{
+        font-size: 8px;
+    }
+    #p2{
+        font-size: 5px;   
+    }
+    footer{
+        height: 200px;
+    }
+    .link ul li .fab{
+        font-size: 22px;
+    }
+    .link{
+        height: 42px;
+    }
+    .table{
+        height: 40px;
+        display: flex;
+    }
+    nav li a {
+        font-size: 7.8px;
+    }
+    .single-content img {
+        width: 150px;
+        height: 180px;
+    }
+    .single-content {
+        position: relative;
+        margin-left: 0px;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+    .liste {
+        font-size: 12.3px;
+    }
+    .images_services{
+        margin-left: 0px;
+        height: 400px;
+    }
+    .geneve2-responsive{
+        width: 179px;
+        height: 195px;
+    }
+    .dubai3-responsive{
+        width: 180px;
+        height: 195px; 
+    }
+    .single-content .title{
+        font-size: 13px;
+        left: 15px;
+    }
+    .geneve_night2-responsive, .dubai5-responsive{
+        display: none;
+    }
+    .left4{
+        width: 40%;
+        margin-left: 20px;
+    }
+    .right2{
+        width: 45%;
+        margin-left: 0px;
+    }
+    .devis{
+        width: 110px;
+        height: 23px;
+    }
+    .a1 {
+        font-size: 10px;
+    }
+    footer {
+        height: 180px;
+    }
+    #p3{
+        font-size: 11px;
+    }
+    .left3{
+        width: 220px;
+        height: 175px;
+        margin-left: 60px;
+        margin-top: 20px;
+        float: none;
+        padding-top: 1px;
+    }
+    #p4{
+        font-size: 13.5px;
+    }
+    .right3 {
+        width: 290px;
+        margin-left: 32px;
+        float:none;
+    }
+    #submit{
+        height: 30px;
+        width: 66px;
+        margin-left: 95px;
+    }
+    label.left {
+        float: none;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #card {
+        margin-left: 33%;
+    }
+    .card{
+        width:130px;
+    }
+    form{
+        padding-left: 10px;
+        width: 260px;
+    }
+}
+
+
+/*@media screen and (max-width: 812px){
+    .iright, .dubai-night-responsive{
+        width:383px;
+        height: 420px;
+    }
+    .ileft, .geneve-night-responsive{
+        width:382px;
+        height: 420px;
+    }
+    .logo,  #logo{
+        top: 35px;
+        left: 40px;
+        width: 75px
     }
 }
