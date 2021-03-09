@@ -94,8 +94,8 @@ function processFormData(oForm) {
 		Email.send({
 			Host: "smtp.infomaniak.com",
 			Username: "ichem.ay@adgconsulting.ch",
-			Password: "PqmnRFBBy-n7",
-			To: 'ichem.ay@adgconsulting.ch',
+			Password: "5-vd7gZUFwZt",
+			To: 'info@adgconsulting.ch',
 			From: email[0],
 			Subject: `Bonjour, je souhaiterais avoir des informations concernant : ${subject}`,
 			Body: nom + " " + prenom + "<br></br>" + tel  + "<br></br>" + commentaires
