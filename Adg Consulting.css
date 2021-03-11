@@ -191,6 +191,11 @@ section{
     text-align: center;
 }
 
+.team-up{
+    width: 100%;
+    text-align: center;
+}
+
 .team-right{
     float: right; 
     width: 45%;
@@ -450,20 +455,53 @@ label.left{
         font-size: 20px;
         color: #fff;
 }
+.single-content-ichem .title{
+        margin: 0;
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+}
     .single-content{
         position: relative;
         overflow: hidden;
         width: 260px;
         height: 310px;
-        margin-left: 180px;
+        margin-left: 100px;
         margin-right: 170px;
         margin-bottom: 50px;
     }
+    .single-content-ichem{
+        position: relative;
+        overflow: hidden;
+        width: 260px;
+        height: 310px;
+        margin-left: 37%;
+        margin-right: 170px;
+        margin-bottom: 50px;
+    }
+    
     .single-content img{
         width: 260px;
         height: 310px;
     }
+    
     .single-content .img-text{
+        width: 260px;
+        height: 310px;
+        background: rgba(218,165,32,.5);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: perspective(260px) rotateX(-90deg);
+        transform-origin: center top 0;
+        transition: .5s;
+        padding: 35% 0 0;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+    }
+    .single-content-ichem .img-text{
         width: 260px;
         height: 310px;
         background: rgba(218,165,32,.5);
@@ -483,7 +521,18 @@ label.left{
         opacity: 1;
         transform: perspective(260px) rotateX(0);
     }
+    .single-content-ichem:hover .img-text{
+        opacity: 1;
+        transform: perspective(260px) rotateX(0);
+    }
 .single-content .title{
+    bottom: 25px;
+    left: 25px;
+    transition: .9s;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.single-content-ichem .title{
     bottom: 25px;
     left: 25px;
     transition: .9s;
@@ -495,7 +544,15 @@ label.left{
     border-right: 3px solid #fff;
     margin-right: 10px;
 }
+.single-content-ichem .title:before{
+    content: "";
+    border-right: 3px solid #fff;
+    margin-right: 10px;
+}
 .single-content:hover .title{
+    bottom: -50px;
+}
+.single-content-ichem:hover .title{
     bottom: -50px;
 }
 
@@ -576,17 +633,7 @@ label.left{
     nav li a {
         font-size: 7.8px;
     }
-    .single-content img {
-        width: 150px;
-        height: 180px;
-    }
-    .single-content {
-        position: relative;
-        margin-left: 0px;
-        width: 150px;
-        height: 180px;
-        margin-bottom: 0px;
-    }
+    
     .liste {
         font-size: 12.3px;
     }
@@ -602,9 +649,35 @@ label.left{
         width: 180px;
         height: 195px;
     }
+    .single-content img {
+        width: 150px;
+        height: 180px;
+    }
+    .single-content {
+        position: relative;
+        margin-left: 0px;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
     .single-content .title{
         font-size: 13px;
         left: 15px;
+    }
+    .single-content-ichem img {
+        width: 155px;
+        height: 180px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 28%;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 13px;
+        font-size: 15px;
     }
     .geneve_night2-responsive, .dubai5-responsive{
         display: none;
@@ -720,19 +793,34 @@ label.left{
         font-size: 24px;
     }
     .single-content img {
-        width: 150px;
-        height: 180px;
+        width: 170px;
+        height: 190px;
     }
     .single-content {
         position: relative;
-        margin-left: 78px;
-        width: 150px;
-        height: 180px;
+        margin-left: 73px;
+        width: 170px;
+        height: 190px;
         margin-bottom: 0px;
     }
     .single-content .title{
-        font-size: 12.5px;
+        font-size: 15px;
         left: 12px;
+    }
+    .single-content-ichem img {
+        width: 180px;
+        height: 200px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 37%;
+        width: 180px;
+        height: 200px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 12px;
+        font-size: 15px;
     }
     .liste {
         font-size: 15px;
@@ -859,16 +947,16 @@ label.left{
         height: 40px;
         display: flex;
     }
-    .single-content img {
-        width: 135px;
-        height: 160px;
-    }
     .team-right {
         margin-right: 12px;
         width: 46%;
     }
     .team-left {
         width: 50%;
+    }
+    .single-content img {
+        width: 135px;
+        height: 160px;
     }
     .single-content {
         position: relative;
@@ -878,6 +966,21 @@ label.left{
         margin-bottom: 0px;
     }
     .single-content .title {
+        left: 9px;
+        font-size: 13px;
+    }
+    .single-content-ichem img {
+        width: 135px;
+        height: 160px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 28%;
+        width: 150px;
+        height: 160px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
         left: 9px;
         font-size: 13px;
     }
@@ -1024,6 +1127,21 @@ label.left{
         font-size: 12.5px;
         left: 12px;
     }
+    .single-content-ichem img {
+        width: 190px;
+        height: 210px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 35%;
+        width: 190px;
+        height: 210px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 12px;
+        font-size: 12.5px;
+    }
     .liste {
         font-size: 15px;
     }
@@ -1156,16 +1274,16 @@ label.left{
         height: 40px;
         display: flex;
     }
-    .single-content img {
-        width: 130px;
-        height: 160px;
-    }
     .team-right {
         margin-right: 12px;
         width: 46%;
     }
     .team-left {
         width: 50%;
+    }
+    .single-content img {
+        width: 130px;
+        height: 160px;
     }
     .single-content {
         position: relative;
@@ -1175,7 +1293,23 @@ label.left{
         margin-bottom: 0px;
     }
     .single-content .title {
-        left: 8px;
+        left: 7px;
+        font-size: 13px;
+    }
+    .single-content-ichem img {
+        width: 150px;
+        height: 180px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 31%;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 7px;
+        font-size: 13px;
     }
     .liste {
         font-size: 12.3px;
@@ -1335,6 +1469,21 @@ label.left{
         font-size: 14px;
         left: 13px;
     }
+    .single-content-ichem img {
+        width: 200px;
+        height: 220px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 38%;
+        width: 200px;
+        height: 220px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 13px;
+        font-size: 14px;
+    }
     .liste {
         font-size: 15px;
     }
@@ -1471,8 +1620,23 @@ label.left{
         margin-bottom: 0px;
     }
     .single-content .title{
-        font-size: 14px;
+        font-size: 15px;
         left: 13px;
+    }
+    .single-content-ichem img {
+        width: 210px;
+        height: 230px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 35.5%;
+        width: 210px;
+        height: 230px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 13px;
+        font-size: 15px;
     }
     .liste {
         font-size: 16px;
@@ -1608,8 +1772,23 @@ label.left{
         margin-bottom: 0px;
     }
     .single-content .title{
-        font-size: 14px;
-        left: 13px;
+        font-size: 15px;
+        left: 15px;
+    }
+    .single-content-ichem img {
+        width: 220px;
+        height: 250px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 38%;
+        width: 220px;
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 15px;
+        font-size: 15px;
     }
     .liste {
         font-size: 17px;
@@ -1729,16 +1908,17 @@ label.left{
         height: 40px;
         display: flex;
     }
-    .single-content img {
-        width: 135px;
-        height: 160px;
-    }
+    
     .team-right {
         margin-right: 12px;
         width: 46%;
     }
     .team-left {
         width: 50%;
+    }
+    .single-content img {
+        width: 135px;
+        height: 160px;
     }
     .single-content {
         position: relative;
@@ -1749,6 +1929,22 @@ label.left{
     }
     .single-content .title {
         left: 9px;
+        font-size: 12.5px;
+    }
+    .single-content-ichem img {
+        width: 150px;
+        height: 180px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 30%;
+        width: 150px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 9px;
+        font-size: 12.5px;
     }
     .liste {
         font-size: 12.3px;
@@ -1909,6 +2105,21 @@ label.left{
         font-size: 14px;
         left: 13px;
     }
+    .single-content-ichem img {
+        width: 210px;
+        height: 230px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 37%;
+        width: 210px;
+        height: 230px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 1px;
+        font-size: 14px;
+    }
     .liste {
         font-size: 15px;
     }
@@ -2053,6 +2264,21 @@ label.left{
     .single-content .title{
         font-size: 14px;
         left: 13px;
+    }
+    .single-content-ichem img {
+        width: 200px;
+        height: 220px;
+    }
+    .single-content-ichem {
+        position: relative;
+        margin-left: 37%;
+        width: 180px;
+        height: 200px;
+        margin-bottom: 0px;
+    }
+    .single-content-ichem .title {
+        left: 14px;
+        font-size: 13px;
     }
     .liste {
         font-size: 15px;
