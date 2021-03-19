@@ -108,7 +108,7 @@ header{
   
 .logo{
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 120px;
 }
 
@@ -238,7 +238,7 @@ section{
 
 .left3{
     margin-top: 95px;
-    background-image: url(photos/hands.jpg);
+    background-image: url(Photos/hands.jpg);
     background-size: 100% 100%;
     text-indent: 2em;
     float: left;
@@ -898,7 +898,7 @@ label.left{
         height: 220px;
     }
     .header-video{
-        height: 211.5px;
+        height: 210px;
     }
     .logo,  #logo{
         top: 15px;
@@ -967,7 +967,7 @@ label.left{
     }
     .single-content .title {
         left: 9px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .single-content-ichem img {
         width: 135px;
